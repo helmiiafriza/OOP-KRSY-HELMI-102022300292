@@ -1,0 +1,28 @@
+<AnchorPane xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <VBox spacing="10" layoutX="10" layoutY="10">
+            <Label text="Zeppeli's listening bar" />
+            <TableView fx:id="tableView">
+                <columns>
+                    <TableColumn text="Album Name" fx:id="columnAlbumName" />
+                    <TableColumn text="Artist" fx:id="columnArtist" />
+                    <TableColumn text="Available" fx:id="columnAvailable" />
+                    <TableColumn text="Total" fx:id="columnTotal" />
+                </columns>
+            </TableView>
+            <HBox spacing="10">
+                <VBox spacing="10">
+                    <TextField fx:id="txtAlbumName" promptText="Judul Album" />
+                    <TextField fx:id="txtArtist" promptText="Nama Artis" />
+                    <TextField fx:id="txtTotal" promptText="Jumlah Total" />
+                </VBox>
+                <VBox spacing="10">
+                    <Button text="Rent Selected" onAction="#handleRentAlbum" />
+                    <Button text="Tambah" onAction="#handleAddAlbum" />
+                    <Button text="Hapus" onAction="#handleDeleteAlbum" />
+                    <Button text="Update" onAction="#handleUpdateAlbum" />
+                </VBox>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>
